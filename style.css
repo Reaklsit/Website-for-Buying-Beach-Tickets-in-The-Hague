@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', 'Lora';
+}
+
+.header {
+	height: 100vh;
+	background-image: url('./images/Backgruond.jpg');
+	background-size: cover;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: auto;
+	height: 100%;
+}
+/* MENU */
+
+.header-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+
+@media (max-width: 1200px) {
+	.header-menu {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media (max-width: 768px) {
+	.header-links {
+		display: none;
+	}
+}
+
+.header-title {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	font-size: 36px;
+	font-family: 'Lora';
+}
+
+.header-links {
+	margin-left: 33px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.header-burger {
+	display: none;
+}
+
+.burger-icon {
+	height: 48px;
+	width: 48px;
+}
+@media (max-width: 768px) {
+	.header-burger {
+		display: inline;
+	}
+}
+.header-links:hover {
+	text-decoration: underline;
+}
+
+/* OFFER */
+
+.header-offer {
+	text-align: center;
+	margin-top: 15%;
+}
+
+.offer-title {
+	color: white;
+	font-size: 82px;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-family: 'Josefin Sans';
+}
+
+/* BUTTON */
+.button {
+	color: black;
+	background-color: white;
+	padding: 20px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Lora';
+}
+
+.button:hover {
+	background-color: rgb(24, 23, 23);
+	color: white;
+	transition-duration: 0.39s;
+}
+
+@media screen and (max-width: 768px) {
+	.offer-title {
+		font-size: 54px;
+		max-width: 260px;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+}
+
+/* FuTURE */
+
+.future {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.text-future {
+	text-align: center;
+	margin: auto;
+	font-size: 50px;
+	text-transform: uppercase;
+	width: 500px;
+	margin-bottom: 39px;
+}
+/* DESCRIPTON */
+
+.description-future {
+	font-size: 20px;
+	text-align: center;
+	width: 660px;
+	margin: auto;
+	margin-bottom: 39px;
+}
+
+.button-future {
+	color: white;
+	background-color: black;
+	padding: 20px 40px;
+	text-decoration: none;
+	font-family: 'Josefin Sans';
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	.future {
+		padding-top: 100px;
+	}
+	.text-future {
+		width: 239px;
+		font-size: 24px;
+	}
+
+	.description-future {
+		width: 329px;
+		margin-bottom: 69px;
+	}
+	.future {
+		padding-bottom: 69px;
+	}
+}
+
+.button-future:hover {
+	background-color: rgb(99, 95, 95);
+	color: white;
+	transition-duration: 1s;
+}
+
+/* Pictures */
+
+.pictures {
+	background-color: black;
+	color: white;
+	padding: 100px 0;
+}
+
+.pictures-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 49px;
+	padding: 50px;
+}
+.pictures-container {
+	display: flex;
+	gap: 10px;
+}
+
+.pictures-photo {
+	width: 33.3%;
+}
+
+@media (max-width: 768px) {
+	.pictures-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.pictures-photo {
+		width: 85%;
+	}
+
+	.pictures-title {
+		font-size: 43px;
+	}
+}
+
+.Photo {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+/* Pictures Button */
+
+.pictures-button {
+	display: flex;
+	padding: 100px 0;
+}
+
+.see-button {
+	color: black;
+	background-color: white;
+	padding: 20px 69px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Lora';
+	font-size: 18px;
+}
+
+.see-button:hover {
+	background-color: rgb(24, 23, 23);
+	color: white;
+	transition-duration: 0.39s;
+}
+
+.Server {
+	background-color: white;
+}
+
+/* Services */
+
+.serv-cont {
+	display: flex;
+	justify-content: space-between;
+	padding: 180px 0;
+}
+
+.serv-decript {
+	width: 450px;
+}
+
+.serv-title {
+	font-size: 56px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+
+.serv-text {
+	margin-bottom: 35px;
+	font-size: 20px;
+}
+
+.serv-link {
+	display: inline-block;
+	padding: 18px 35px;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+
+.serv-list {
+	list-style: none;
+	font-size: 24px;
+}
+
+.serv-item {
+	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+	gap: 40;
+}
+
+.item-number {
+	font-weight: 600;
+	font-size: 56px;
+}
+
+@media (max-width: 768px) {
+	.serv-cont {
+		flex-direction: column;
+	}
+	.Server {
+		margin-top: 1px;
+	}
+	.serv-title {
+		font-size: 30px;
+	}
+	.serv-text {
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+
+	.serv-list {
+		font-size: 15px;
+	}
+
+	.item-number {
+		font-size: 39px;
+		font-weight: 500;
+	}
+
+	.serv-link {
+		position: absolute;
+		margin-top: 290px;
+		padding: 12px 18px;
+	}
+}
+
+/* FORM */
+
+.Former {
+	background-color: black;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.form {
+	width: 100%;
+	max-width: 500px;
+	color: white;
+}
+
+.form__feedback {
+	font-size: 49px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: 'Lora';
+}
+
+.form__name,
+.form__input {
+	display: block;
+}
+
+.form__input {
+	width: 100%;
+	font-size: 20px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	margin-bottom: 28px;
+	color: white;
+	padding: 4px 0;
+	resize: none;
+}
+
+.form__input:focus {
+	outline: none;
+}
+
+.form__input::placeholder {
+	font-size: 16px;
+	color: white;
+	opacity: 0.3;
+}
+
+.form__name {
+	margin-bottom: 10px;
+}
+
+.form__button {
+	display: block;
+	margin: auto;
+	width: 50%;
+	text-transform: uppercase;
+	background-color: gray;
+	border: none;
+	color: black;
+	padding: 15px 0;
+}
+
+.form__button:focus {
+	outline: none;
+}
+
+.form__button:hover {
+	background-color: black;
+	color: white;
+	transition-duration: 0.6s;
+	outline: 1px solid white;
+}
+
+/* Bottom */
+
+.bottom {
+	background-color: black;
+	color: white;
+
+	padding-bottom: 82px;
+}
+
+.bottom-line {
+	display: flex;
+	justify-content: space-between;
+	border-top: 3px solid white;
+}
+
+.title-text {
+	margin-top: 33px;
+}
+
+.title-adress {
+	margin-top: 33px;
+	line-height: 1.7;
+}
